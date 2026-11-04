@@ -72,7 +72,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="assets/logo.jpg" type="image/jpeg" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=lightbox-2" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -493,34 +493,6 @@
         </div>
       </section>
 
-      <div
-        class="lightbox"
-        id="lightbox"
-        hidden
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="lightbox-title"
-      >
-        <div class="lightbox-backdrop" data-close-lightbox></div>
-        <div class="lightbox-panel">
-          <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close">
-            Close
-          </button>
-          <img id="lightbox-image" src="" alt="" />
-          <div class="lightbox-meta">
-            <p id="lightbox-date"></p>
-            <h3 id="lightbox-title"></h3>
-            <a
-              id="lightbox-source"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View on Instagram</a
-            >
-          </div>
-        </div>
-      </div>
-
       <!-- EXEC BOARD: drop headshots in assets/board/ -->
       <section id="board" class="section section-tint section-art">
         <svg class="art-corner art-corner-tr art-boxes" viewBox="0 0 80 80" aria-hidden="true">
@@ -538,7 +510,14 @@
 
           <ul class="board-grid">
             <li class="board-person">
-              <div class="board-photo" aria-hidden="true"><span>MM</span></div>
+              <div class="board-photo">
+                <img
+                  src="assets/board/max-mackler.jpg"
+                  alt="Max Mackler"
+                  width="200"
+                  height="200"
+                />
+              </div>
               <div class="board-info">
                 <h3>Max Mackler</h3>
                 <p class="board-role">President</p>
@@ -560,12 +539,19 @@
             </li>
 
             <li class="board-person">
-              <div class="board-photo" aria-hidden="true"><span>GG</span></div>
+              <div class="board-photo">
+                <img
+                  src="assets/board/graham-galusha.jpg"
+                  alt="Graham Galusha"
+                  width="200"
+                  height="200"
+                />
+              </div>
               <div class="board-info">
                 <h3>Graham Galusha</h3>
                 <p class="board-role">Vice President</p>
                 <p class="board-meta">
-                  Junior. HOD, Climate Studies. Legal Studies minor.
+                  HOD, Climate Studies. Legal Studies minor.
                 </p>
                 <p>
                   <a
@@ -579,7 +565,14 @@
             </li>
 
             <li class="board-person">
-              <div class="board-photo" aria-hidden="true"><span>CF</span></div>
+              <div class="board-photo">
+                <img
+                  src="assets/board/caroline-funk.jpg"
+                  alt="Caroline Funk"
+                  width="200"
+                  height="200"
+                />
+              </div>
               <div class="board-info">
                 <h3>Caroline Funk</h3>
                 <p class="board-role">Vice President</p>
@@ -610,7 +603,7 @@
                 <h3>Rhett Adam</h3>
                 <p class="board-role">Executive Board</p>
                 <p class="board-meta">
-                  Junior. Earth and Environmental Sciences, Data Science.
+                  Earth and Environmental Sciences, Data Science.
                 </p>
                 <p>
                   <a href="mailto:rhett.r.adam@vanderbilt.edu"
@@ -629,12 +622,19 @@
             </li>
 
             <li class="board-person">
-              <div class="board-photo" aria-hidden="true"><span>CA</span></div>
+              <div class="board-photo">
+                <img
+                  src="assets/board/claire-arney.jpg"
+                  alt="Claire Arney"
+                  width="200"
+                  height="200"
+                />
+              </div>
               <div class="board-info">
                 <h3>Claire Arney</h3>
                 <p class="board-role">Executive Board</p>
                 <p class="board-meta">
-                  Senior. Chemistry, Earth and Environmental Sciences.
+                  Chemistry, Earth and Environmental Sciences.
                 </p>
                 <p>
                   <a
@@ -648,7 +648,14 @@
             </li>
 
             <li class="board-person">
-              <div class="board-photo" aria-hidden="true"><span>JE</span></div>
+              <div class="board-photo">
+                <img
+                  src="assets/board/julian-erez.jpg"
+                  alt="Julian Erez"
+                  width="200"
+                  height="200"
+                />
+              </div>
               <div class="board-info">
                 <h3>Julian Erez</h3>
                 <p class="board-role">Executive Board</p>
@@ -665,7 +672,14 @@
             </li>
 
             <li class="board-person">
-              <div class="board-photo" aria-hidden="true"><span>IM</span></div>
+              <div class="board-photo">
+                <img
+                  src="assets/board/iru-milesi.jpg"
+                  alt="Irú Milesi"
+                  width="200"
+                  height="200"
+                />
+              </div>
               <div class="board-info">
                 <h3>Irú Milesi</h3>
                 <p class="board-role">Executive Board</p>
@@ -746,6 +760,34 @@
         </div>
       </section>
     </main>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightbox-title"
+    >
+      <div class="lightbox-backdrop" data-close-lightbox></div>
+      <div class="lightbox-panel">
+        <button class="lightbox-close" type="button" data-close-lightbox aria-label="Close">
+          Close
+        </button>
+        <img id="lightbox-image" src="" alt="" />
+        <div class="lightbox-meta">
+          <p id="lightbox-date"></p>
+          <h3 id="lightbox-title"></h3>
+          <a
+            id="lightbox-source"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View on Instagram</a
+          >
+        </div>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
