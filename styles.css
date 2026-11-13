@@ -593,8 +593,10 @@ p:last-child {
 
 .flyer img {
   width: 100%;
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center;
   border-radius: 0.35rem;
   border: 1px solid var(--line);
   background: var(--paper-2);
